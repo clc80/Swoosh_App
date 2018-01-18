@@ -38,6 +38,13 @@ class LeagueVC: UIViewController {
         player.desiredLeague = leagueType
         nextBtn.isEnabled = true
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let skillVC = segue.destination as? SkillVC {
+           //This is the handoff from from this VC Controller to the skillVC
+            skillVC.player = player
+        }
+    }
 
     /*
     // MARK: - Navigation
