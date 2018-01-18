@@ -87,10 +87,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <connections>
-                        <outlet property="bgImg" destination="f4k-3f-kOd" id="f9v-Ha-5bL"/>
-                        <outlet property="swoosh" destination="Ebn-Eb-3yO" id="Vw1-ho-5ll"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -173,6 +169,9 @@
                                 <state key="normal" title="NEXT">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="onNextTapped:" destination="aqL-gE-IhI" eventType="touchUpInside" id="B0t-D6-DFg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybp-br-Pys">
                                 <rect key="frame" x="20" y="10" width="30" height="30"/>
@@ -206,11 +205,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8WR-2b-Nr5"/>
                     </view>
+                    <connections>
+                        <segue destination="dpO-wC-i3D" kind="show" identifier="skillVCSegue" id="cu4-sX-GIT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QdT-Rq-m80" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="l9i-FH-tHa" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="848.79999999999995" y="133.5832083958021"/>
+            <point key="canvasLocation" x="842" y="132"/>
         </scene>
         <!--SkillVC-->
         <scene sceneID="e1D-5l-RS0">
